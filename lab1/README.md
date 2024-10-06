@@ -1,0 +1,16 @@
+1. humanIMB class naming convention is not consistent. Convention is to use CamelCase for class names; [link](https://google.github.io/styleguide/javaguide.html#s3.4.1-one-top-level-class)
+2. humanIMB class is not in its own file. It should be in a file called HumanIMB.java; [link](https://google.github.io/styleguide/javaguide.html#s3.4.1-one-top-level-class)
+3. humanIMB class member variables are not private. They should be private;
+4. humanIMB class member variables names are not consistent. Convention is to use camelCase for member variables <em>"The choice of a variable name should be mnemonic- that is, designed to indicate to the casual observer the intent of its use"</em>; [link](https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html); 
+5. humanIMB class member 'imb' should not be static. It should be an instance variable as it is for each human object individually. When it is static, it is shared among all human objects which is not the intended behavior. Also, this refers to methods that uses this variable: takeImt and Result;
+5.1 BTW, humanIMB class member variables are not in proper order; static variables should be first, then instance variables, then constructors, then methods; [link](https://www.oracle.com/java/technologies/javase/codeconventions-fileorganization.html)
+6. humanIMB class should use proper indetion between methods and variables; [6.4 Class and Interface Declarations](https://www.oracle.com/java/technologies/javase/codeconventions-declarations.html)
+7. humanIMB class comments are not necessary. They are not adding any value to the code. <em>"Comments should be used to give overviews of code and provide additional information that is not readily available in the code itself."</em>; [link](https://www.oracle.com/java/technologies/javase/codeconventions-comments.html)
+7.1. If you want to keep the comments, they should be in the following way: '// '; [link](https://google.github.io/styleguide/javaguide.html#s4.8.6-comments)
+7.2 also, under Main class, inproper end-of-line comments are used. There should be used docs comments; [5.2 Documentation Comments](https://www.oracle.com/java/technologies/javase/codeconventions-comments.html)
+8. getters and setters are not named properly (humanIMB::Result). Convention is to use getVariableName and setVariableName;
+9. proper spacing is not used in the code. There should be a space between type and variable name, variable and operator, operator and value, etc;
+10. magic numbers are used in the code. They should be replaced with constants;
+11. under if statements, & operator is used. It should be &&, but not bitwise & operator which can lead to unexpected results and unnecessary code execution; [link](https://stackoverflow.com/questions/5564410/what-is-the-difference-between-and-in-java)
+12. humanIMB class method 'Result' is not named properly. It should follow camelCase naming convention; [link](https://google.github.io/styleguide/javaguide.html#s5.2.3-method-names) 
+14. inproper static method invocation is used. It should be invoked on the class itself, not on the object; [10.2 Referring to Class Variables and Methods](https://www.oracle.com/java/technologies/javase/codeconventions-programmingpractices.html)
