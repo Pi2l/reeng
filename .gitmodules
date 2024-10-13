@@ -1,0 +1,3 @@
+[submodule "lab2/lab2/harrry-potter"]
+	path = lab2/lab2/harrry-potter
+	url = git@github.com:heorhiypro/harrry-potter.git
